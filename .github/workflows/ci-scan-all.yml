@@ -1,0 +1,45 @@
+# src: ./.github/workflows/ci-scan-all.yml
+# @(#) : Caller workflow for all linting and scanning in .github repository
+#
+# Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+name: "CI Scan All"
+
+# Minimal permissions following security best practices
+permissions:
+  contents: read
+
+on:
+  push:
+    branches:
+      - "**"
+
+  pull_request:
+    branches:
+      - main
+      - master
+      - releases
+
+  workflow_dispatch:
+
+jobs:
+  actionlint:
+    name: Actionlint
+    permissions:
+      contents: read
+    uses: atsushifx/.github/.github/workflows/ci-common-lint-actionlint.yml@r1.0.0
+
+  ghalint:
+    name: Ghalint
+    permissions:
+      contents: read
+    uses: atsushifx/.github/.github/workflows/ci-common-lint-ghalint.yml@r1.0.0
+
+  scan-gitleaks:
+    name: Gitleaks Secret Scan
+    permissions:
+      contents: read
+    uses: atsushifx/.github/.github/workflows/ci-common-scan-gitleaks.yml@r1.0.0

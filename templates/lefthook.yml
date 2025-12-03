@@ -1,0 +1,27 @@
+# src: ./lefthook.yml
+# @(#) : lefthook configuration for git hooks
+#
+# Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+pre-commit:
+  parallel: true
+  commands:
+    gitleaks:
+      run: gitleaks protect --config ./configs/gitleaks.toml --staged
+
+    secretlint:
+      glob: "**/*"
+      run: >
+        secretlint
+        --secretlintrc ./configs/secretlint.config.yaml
+        --secretlintignore .gitignore
+        "{staged_files}"
+
+commit-msg:
+  parallel: true
+  commands:
+    commitlint:
+      run: commitlint --config ./configs/commitlint.config.ts --edit
