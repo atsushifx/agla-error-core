@@ -1,0 +1,66 @@
+// src: ./shared/configs/tsconfig.base.json
+// @(#) : base TypeScript configuration for all packages
+//
+// Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
+//
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+{
+  // --- files settings (set sub-packages)
+  // "include": []
+  // "exclude": [],
+  "exclude": [
+    ".git",
+    "dist",
+    "lib",
+    "maps",
+    "module",
+    "node_modules",
+    ".cache",
+    "temp",
+    "**/__tests__/**",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+  // --- compile options
+  // src: ./shared/configs/tsconfig.base.json
+  "compilerOptions": {
+    // ✅ 厳格チェック
+    "alwaysStrict": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    // ✅ ターゲットとモジュール解決
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    // ✅ 型解決と互換性
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    // ✅ 宣言ファイル
+    "declaration": true,
+    "declarationMap": true,
+    // ✅ 出力
+    "sourceMap": false,
+    "outDir": "./dist",
+    "newLine": "LF",
+    "composite": false,
+    // ✅ 増分ビルド
+    // incremental build
+    "incremental": true,
+    // ✅ ライブラリ
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "types": [
+      "node",
+      "bun"
+    ],
+    // baseURLを許可
+    "ignoreDeprecations": "6.0"
+  }
+}

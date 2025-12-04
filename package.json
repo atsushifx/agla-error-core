@@ -65,6 +65,8 @@
     "test:runtime:node": "pnpm exec vitest run --config ./configs/vitest.config.runtime.ts ",
     "test:runtime:deno": "deno test src/**/__tests__/runtime/deno/*.spec.ts",
     "test:runtime:bun": "bun test ./src/__tests__/runtime/bun/",
-    "lint:secrets": "secretlint --secretlintrc ./configs/secretlint.config.yaml --secretlintignore .gitignore --maskSecrets **/*"
+    "lint:secrets": "secretlint --secretlintrc ./configs/secretlint.config.yaml --secretlintignore .gitignore --maskSecrets **/*",
+    "sync:configs": "bash ./scripts/sync-configs.sh",
+    "sync:configs:all": "pnpm -r sync:configs"
   }
 }

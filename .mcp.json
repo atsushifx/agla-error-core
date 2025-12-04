@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "lsmcp": {
+      "type": "stdio",
+      "command": "lsmcp",
+      "args": [
+        "-p",
+        "typescript"
+      ]
+    }
+  }
+}

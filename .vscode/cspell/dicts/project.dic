@@ -1,3 +1,5 @@
 # this files is words list for check spell on cSpell
-DEVMODE
-ghalint
+esm
+sdd
+tsup
+vite
