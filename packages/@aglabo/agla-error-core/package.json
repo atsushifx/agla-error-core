@@ -31,6 +31,7 @@
     "lint:deno": "pnpm exec deno lint",
     "lint:bun": "pnpm exec eslint --config ./configs/eslint.config.bun.js --cache --cache-location .cache/eslint-cache/esLintCache-bun ",
     "lint:secrets": "secretlint --secretlintrc ./configs/secretlint.config.yaml --secretlintignore .gitignore --maskSecrets **/*",
+    "test:all": "concurrently \"pnpm run test:develop\" \"pnpm run test:functional\" \"pnpm run test:ci\" \"pnpm run test:e2e\" \"pnpm run test:runtime\" ",
     "test:develop": "pnpm exec vitest run --config ./configs/vitest.config.unit.ts",
     "test:functional": "pnpm exec vitest run --config ./configs/vitest.config.functional.ts",
     "test:ci": "pnpm exec vitest run --config ./configs/vitest.config.integration.ts",

@@ -1,5 +1,7 @@
 # this files is words list for check spell on cSpell
+AGT
 esm
+jscoverage
 sdd
 tsup
 vite
