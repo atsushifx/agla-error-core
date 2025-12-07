@@ -55,7 +55,7 @@
     "lint:deno": "pnpm exec deno lint",
     "lint:bun": "pnpm exec eslint --config ./configs/eslint.config.bun.js --cache --cache-location .cache/eslint-cache/esLintCache-bun ",
     "lint:filenames": "pnpm exec ls-lint --config ./configs/ls-lint.yaml ",
-    "lint:text": "textlint --config ./configs/textlintrc.yaml --cache --cache-location .cache/textlint-cache/textlintCache ",
+    "lint:text": "textlint --config ./configs/textlintrc.yaml --ignore-path ./configs/.textlintignore --cache --cache-location .cache/textlint-cache/textlintCache ",
     "lint:markdown": "markdownlint-cli2 --config ./configs/.markdownlint.yaml ",
     "test:develop": "pnpm run -r test:develop",
     "test:functional": "pnpm run -r test:functional",
