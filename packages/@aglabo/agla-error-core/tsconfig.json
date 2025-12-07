@@ -18,20 +18,20 @@
   ],
   "compilerOptions": {
     // directories
-    "declarationDir": "./maps",
+    "declarationDir": "./modules",
     // "outDir": "./maps",
     "rootDir": "./",
     // aliases
     "baseUrl": "./",
     "paths": {
-      "@/*": [
+      "#/*": [
         "src/*",
         "/*"
       ],
-      "@shared/*": [
+      "#shared/*": [
         "shared/*"
       ],
-      "@tests/*": [
+      "#tests/*": [
         "tests/*"
       ]
     },

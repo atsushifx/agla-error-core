@@ -31,6 +31,11 @@ export default [
       'shared/**/*.ts',
       'tests/**/*.ts',
     ],
+    ignores: [
+      // Runtime-specific test files use environment-specific globals
+      'src/__tests__/runtime/deno/**/*.ts',
+      'src/__tests__/runtime/bun/**/*.ts',
+    ],
     languageOptions: {
       parserOptions: {
         tsconfigRootDir: __rootDir,

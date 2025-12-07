@@ -28,11 +28,12 @@ export default mergeConfig(baseConfig, {
   test: {
     include: [
       // Runtime Test - tests that run in actual runtime environments
+      'src/__tests__/runtime/node/*.runtime.spec.ts',
       'src/__tests__/runtime/node/*.spec.ts',
       'src/__tests__/runtime/node/*.test.ts',
-      // Note: Bun tests are in src/__tests__/runtime/bun/*.spec.ts
+      // Note: Bun tests are in src/__tests__/runtime/bun/*.runtime.spec.ts
       //       but they are run using Bun's native test runner (see package.json test:runtime:bun)
-      // Note: Deno tests are in src/__tests__/runtime/deno/*.spec.ts
+      // Note: Deno tests are in src/__tests__/runtime/deno/*.runtime.spec.ts
       //       but they are run using Deno's native test runner (see package.json test:runtime:deno)
     ],
     exclude: [
