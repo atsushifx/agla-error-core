@@ -1,5 +1,5 @@
 // src: shared/common/configs/vitest.config.runtime.ts
-// @(#) : vitest config for runtime tests
+// @(#) : Vitest cross-runtime test configuration for @aglabo/agla-error-core
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //

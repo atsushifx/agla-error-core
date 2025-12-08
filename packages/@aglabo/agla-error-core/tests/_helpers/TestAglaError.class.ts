@@ -7,8 +7,8 @@
 // https://opensource.org/licenses/MIT
 
 // Type definitions
-import type { AglaErrorOptions } from '@shared/types/AglaError.types';
-import { AglaError } from '@shared/types/AglaError.types';
+import type { AglaErrorOptions } from '#shared/types/AglaError.types';
+import { AglaError } from '#shared/types/AglaError.types';
 
 /**
  * Test utility class extending AglaError for testing purposes.

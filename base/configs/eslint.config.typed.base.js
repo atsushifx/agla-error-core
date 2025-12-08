@@ -50,8 +50,10 @@ export const createTypedConfig = (options = {}) => {
 
   return [
     {
-      files,
       ignores,
+    },
+    {
+      files,
       plugins: {
         '@typescript-eslint': tseslint,
       },

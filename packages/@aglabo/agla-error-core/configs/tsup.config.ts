@@ -1,5 +1,5 @@
 // src: shared/common/configs/tsup.config.module.ts
-// @(#) : tsup config for ESM module
+// @(#) : tsup build configuration for @aglabo/agla-error-core
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //

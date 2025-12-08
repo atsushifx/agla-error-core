@@ -18,20 +18,29 @@ const __rootDir = path.resolve(__dirname, '..');
 // import form common base config
 import { createTypedConfig } from '../../../../base/configs/eslint.config.typed.base.js';
 
-export default createTypedConfig({
-  files: [
-    'index.ts',
-    'src/**/*.ts',
-    'types/**/*.ts',
-    'tests/**/*.ts',
-  ],
-  projectPaths: ['./tsconfig.json'],
-  tsconfigRootDir: __rootDir,
-  settings: {
-    'import/resolver': {
-      typescript: {
-        project: './tsconfig.json',
+export default [
+  {
+    ignores: [
+      'src/__tests__/runtime/deno/**',
+      'src/__tests__/runtime/bun/**',
+      'coverage/**',
+    ],
+  },
+  ...createTypedConfig({
+    files: [
+      'index.ts',
+      'src/**/*.ts',
+      'types/**/*.ts',
+      'tests/**/*.ts',
+    ],
+    projectPaths: ['./tsconfig.json'],
+    tsconfigRootDir: __rootDir,
+    settings: {
+      'import/resolver': {
+        typescript: {
+          project: './tsconfig.json',
+        },
       },
     },
-  },
-});
+  }),
+];

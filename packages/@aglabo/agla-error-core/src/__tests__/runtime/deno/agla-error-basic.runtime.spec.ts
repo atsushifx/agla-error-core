@@ -6,12 +6,12 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import { assertEquals, assertExists, assert } from 'https://deno.land/std@0.208.0/assert/mod.ts';
+import { assert, assertEquals, assertExists } from 'https://deno.land/std@0.208.0/assert/mod.ts';
 
 // Import from built module (after build, use the ESM output)
 // For Deno, we import from the module directory which is built by tsup
-import { AG_ERROR_SEVERITY } from '@shared/types/ErrorSeverity.types.ts';
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class.ts';
+import { AG_ERROR_SEVERITY } from '#shared/types/ErrorSeverity.types.ts';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class.ts';
 
 Deno.test('Deno Runtime: AglaError instantiation', () => {
   const error = new TestAglaError('TestError', 'Test error message');

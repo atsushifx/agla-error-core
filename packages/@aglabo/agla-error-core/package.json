@@ -1,8 +1,8 @@
 {
   "name": "@aglabo/agla-error-core",
-  "_comment": "@(#) AglaError: standardized error handling with AglaError class and ErrorSeverity enum",
+  "_comment": "@(#) Error handling core module for @aglabo ecosystem with AglaError class and ErrorSeverity enum",
   "version": "0.1.0",
-  "description": "AglaError class and ErrorSeverity enum for standardized error handling",
+  "description": "Standardized error handling core module for @aglabo ecosystem with AglaError class, ErrorSeverity enum, and cross-runtime support",
   "author": "atsushifx <https://github.com/atsushifx>",
   "license": "MIT",
   "type": "module",

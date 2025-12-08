@@ -10,11 +10,11 @@
 import { describe, expect, it } from 'vitest';
 
 // Type definitions
-import type { AglaError } from '@shared/types/AglaError.types';
-import { AG_ERROR_SEVERITY } from '@shared/types/ErrorSeverity.types';
+import type { AglaError } from '#shared/types/AglaError.types';
+import { AG_ERROR_SEVERITY } from '#shared/types/ErrorSeverity.types';
 
 // Test utilities
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class';
 
 // Test cases
 /**
