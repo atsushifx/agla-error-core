@@ -10,7 +10,7 @@
 import { describe, expect, it } from 'vitest';
 
 // Type definitions
-import { guardAglaErrorContext, isValidAglaErrorContext } from '@shared/types/AglaError.types';
+import { guardAglaErrorContext, isValidAglaErrorContext } from '#shared/types/AglaError.types';
 
 // Test cases
 /**

@@ -10,10 +10,10 @@
 import { describe, expect, it, vi } from 'vitest';
 
 // Type definitions
-import { AG_ERROR_SEVERITY } from '@shared/types/ErrorSeverity.types';
+import { AG_ERROR_SEVERITY } from '#shared/types/ErrorSeverity.types';
 
 // Test utilities
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class';
 
 // Test mocks
 const fs = { readFile: vi.fn() };

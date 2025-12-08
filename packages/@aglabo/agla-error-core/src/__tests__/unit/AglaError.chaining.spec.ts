@@ -10,7 +10,7 @@
 import { describe, expect, it } from 'vitest';
 
 // Test utilities
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class';
 
 // Test cases
 /**

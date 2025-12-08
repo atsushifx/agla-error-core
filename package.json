@@ -1,21 +1,22 @@
 {
-  "name": "@aglabo/command-runner",
-  "_comment": "@(#) : Shell command execution library with TypeScript support and comprehensive error handling",
+  "name": "@aglabo/agla-error-core",
+  "_comment": "@(#) : Standardized error handling library for @aglabo ecosystem with AglaError class and ErrorSeverity",
   "version": "0.0.1",
-  "description": "Type-safe shell command execution library for Node.js with promise-based API, streaming support, and detailed error handling",
+  "private": true,
+  "description": "Type-safe error handling core library for @aglabo ecosystem with standardized AglaError class, severity levels, and cross-runtime support (Node.js/Deno/Bun)",
   "author": "atsushifx <https://github.com/atsushifx>",
   "license": "MIT",
   "type": "module",
   "keywords": [
-    "shell",
-    "command",
-    "exec",
-    "child-process",
+    "error-handling",
+    "aglaerror",
+    "severity",
     "typescript",
-    "promise",
-    "async",
-    "subprocess",
-    "execution"
+    "cross-runtime",
+    "node",
+    "deno",
+    "bun",
+    "aglabo"
   ],
   "packageManager": "pnpm@10.24.0",
   "engines": {

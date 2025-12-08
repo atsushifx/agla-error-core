@@ -1,5 +1,5 @@
 // src: ./tsconfig.json
-// @(#) : typescript compile settings
+// @(#) : TypeScript configuration for @aglabo/agla-error-core - error handling core module
 //
 // Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
 //
@@ -18,20 +18,20 @@
   ],
   "compilerOptions": {
     // directories
-    "declarationDir": "./maps",
+    "declarationDir": "./modules",
     // "outDir": "./maps",
     "rootDir": "./",
     // aliases
     "baseUrl": "./",
     "paths": {
-      "@/*": [
+      "#/*": [
         "src/*",
         "/*"
       ],
-      "@shared/*": [
+      "#shared/*": [
         "shared/*"
       ],
-      "@tests/*": [
+      "#tests/*": [
         "tests/*"
       ]
     },

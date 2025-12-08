@@ -8,12 +8,12 @@
 import { describe, expect, it } from 'vitest';
 
 // Type definitions
-import type { AglaErrorOptions } from '@shared/types/AglaError.types';
-import { AG_ERROR_SEVERITY } from '@shared/types/ErrorSeverity.types';
+import type { AglaErrorOptions } from '#shared/types/AglaError.types';
+import { AG_ERROR_SEVERITY } from '#shared/types/ErrorSeverity.types';
 
 // Test utilities
-import type { _TAglaErrorContextWithSymbols } from '@tests/_helpers/test-types.types';
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class';
+import type { _TAglaErrorContextWithSymbols } from '#tests/_helpers/test-types.types';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class';
 
 // Test cases
 /**

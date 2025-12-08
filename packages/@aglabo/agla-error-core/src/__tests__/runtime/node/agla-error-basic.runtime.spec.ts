@@ -6,9 +6,9 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import { describe, it, expect } from 'vitest';
-import { AG_ERROR_SEVERITY } from '@shared/types';
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class';
+import { AG_ERROR_SEVERITY } from '#shared/types';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class';
+import { describe, expect, it } from 'vitest';
 
 describe('Node.js Runtime: AglaError Basic Functionality', () => {
   describe('AglaError instantiation', () => {
@@ -123,7 +123,7 @@ describe('Node.js Runtime: AglaError Basic Functionality', () => {
         code: 'TEST_001',
         severity: AG_ERROR_SEVERITY.ERROR,
       });
-      const json = error.toJSON?.();
+      const json = error.toJSON();
       expect(json).toBeDefined();
     });
 

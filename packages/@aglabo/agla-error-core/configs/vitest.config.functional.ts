@@ -1,5 +1,5 @@
 // src: shared/common/configs/vitest.config.functional.ts
-// @(#) : vitest config for functional test
+// @(#) : Vitest functional test configuration for @aglabo/agla-error-core
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //

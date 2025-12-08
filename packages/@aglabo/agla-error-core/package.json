@@ -1,13 +1,21 @@
 {
   "name": "@aglabo/agla-error-core",
-  "_comment": "@(#) AglaError: standardized error handling with AglaError class and ErrorSeverity enum",
+  "_comment": "@(#) Error handling core module for @aglabo ecosystem with AglaError class and ErrorSeverity enum",
   "version": "0.1.0",
-  "description": "AglaError class and ErrorSeverity enum for standardized error handling",
+  "description": "Standardized error handling core module for @aglabo ecosystem with AglaError class, ErrorSeverity enum, and cross-runtime support",
   "author": "atsushifx <https://github.com/atsushifx>",
   "license": "MIT",
   "type": "module",
   "main": "./module/index.js",
   "types": "./module/index.d.ts",
+  "imports": {
+    "#/*": [
+      "./src/*",
+      "./*"
+    ],
+    "#shared/*": "./shared/*",
+    "#tests/*": "./tests/*"
+  },
   "exports": {
     ".": {
       "import": "./module/index.js",
@@ -38,7 +46,7 @@
     "test:e2e": "pnpm exec vitest run --config ./configs/vitest.config.e2e.ts",
     "test:runtime": "concurrently \"pnpm run test:runtime:node\" \"pnpm run test:runtime:deno\" \"pnpm run test:runtime:bun\" ",
     "test:runtime:node": "pnpm exec vitest run --config ./configs/vitest.config.runtime.ts ",
-    "test:runtime:deno": "deno test src/**/__tests__/runtime/deno/*.ts",
+    "test:runtime:deno": "deno test src/**/__tests__/runtime/deno/*.spec.ts",
     "test:runtime:bun": "bun test ./src/__tests__/runtime/bun/",
     "test:coverage:unit": "pnpm exec vitest run --coverage --config ./configs/vitest.config.unit.ts",
     "test:coverage:functional": "pnpm exec vitest run --coverage --config ./configs/vitest.config.functional.ts",

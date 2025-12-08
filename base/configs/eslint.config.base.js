@@ -32,6 +32,7 @@ export default [
       '**/.cache/**',
       '**/configs/**',
       '**/*.d.ts',
+      '**/coverage/**',
     ],
   },
 

@@ -6,9 +6,9 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import { describe, it, expect } from 'bun:test';
-import { AG_ERROR_SEVERITY } from '@shared/types/ErrorSeverity.types';
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class';
+import { AG_ERROR_SEVERITY } from '#shared/types/ErrorSeverity.types';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class';
+import { describe, expect, it } from 'bun:test';
 
 describe('Bun Runtime: AglaError Basic Functionality', () => {
   describe('AglaError instantiation', () => {
@@ -152,7 +152,7 @@ describe('Bun Runtime: AglaError Basic Functionality', () => {
       const promise = Promise.reject(
         new TestAglaError('PromiseError', 'Promise rejection test'),
       );
-      expect(promise).rejects.toThrow();
+      await expect(promise).rejects.toThrow();
     });
   });
 });

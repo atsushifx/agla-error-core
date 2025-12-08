@@ -1,5 +1,5 @@
 // src: shared/common/configs/vitest.config.unit.ts
-// @(#) : vitest config for unit test
+// @(#) : Vitest unit test configuration for @aglabo/agla-error-core
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //

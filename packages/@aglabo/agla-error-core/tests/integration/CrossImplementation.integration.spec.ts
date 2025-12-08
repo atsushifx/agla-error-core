@@ -10,10 +10,10 @@
 import { describe, expect, it } from 'vitest';
 
 // Type definitions
-import { AglaError } from '@shared/types/AglaError.types';
+import { AglaError } from '#shared/types/AglaError.types';
 
 // Test utilities
-import { TestAglaError } from '@tests/_helpers/TestAglaError.class';
+import { TestAglaError } from '#tests/_helpers/TestAglaError.class';
 
 /**
  * Cross-implementation compatibility integration tests

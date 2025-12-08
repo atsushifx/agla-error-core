@@ -1,5 +1,5 @@
 // src: shared/common/configs/vitest.config.ci.ts
-// @(#) : vitest config for CI test
+// @(#) : Vitest integration test configuration for @aglabo/agla-error-core
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //

@@ -3,7 +3,7 @@
 // Analyze and merge coverage reports from multiple test layers using functional programming
 
 import fs from 'fs';
-import path from 'path';
+import process from "node:process";
 
 // Define packages and test layer names
 const PACKAGES = ['agla-error-core'];
@@ -13,7 +13,6 @@ const TEST_LAYERS = ['unit', 'functional', 'integration', 'e2e', 'runtime'];
 const pipe = (...fns) => (value) => fns.reduce((acc, fn) => fn(acc), value);
 const map = (fn) => (array) => array.map(fn);
 const filter = (predicate) => (array) => array.filter(predicate);
-const reduce = (fn, initial) => (array) => array.reduce(fn, initial);
 const flatMap = (fn) => (array) => array.flatMap(fn);
 
 // Generate paths for all coverage files across packages and test layers

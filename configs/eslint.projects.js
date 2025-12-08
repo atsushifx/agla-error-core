@@ -9,7 +9,5 @@
 export default [
   // for This Product
   './packages/@aglabo/agla-error-core/tsconfig.json',
-
   // root project
-  './tsconfig.json',
 ];

@@ -10,7 +10,7 @@
 import { describe, expect, it } from 'vitest';
 
 // Type definitions
-import { AG_isValidErrorSeverity } from '@shared/types/ErrorSeverity.types';
+import { AG_isValidErrorSeverity } from '#shared/types/ErrorSeverity.types';
 
 // Test cases
 /**

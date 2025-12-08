@@ -1,5 +1,5 @@
 // src: ./shared/configs/tsconfig.base.json
-// @(#) : base TypeScript configuration for all packages
+// @(#) : Base TypeScript configuration for @aglabo error handling library
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //

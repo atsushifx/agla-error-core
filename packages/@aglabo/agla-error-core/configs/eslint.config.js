@@ -1,5 +1,5 @@
 // src: shared/common/configs/eslint.config.js
-// @(#) : ESLint flat config for TypeScript workspace
+// @(#) : ESLint configuration for @aglabo/agla-error-core
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //
@@ -30,6 +30,11 @@ export default [
       'src/**/*.ts',
       'shared/**/*.ts',
       'tests/**/*.ts',
+    ],
+    ignores: [
+      // Runtime-specific test files use environment-specific globals
+      'src/__tests__/runtime/deno/**/*.ts',
+      'src/__tests__/runtime/bun/**/*.ts',
     ],
     languageOptions: {
       parserOptions: {

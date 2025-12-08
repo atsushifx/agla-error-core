@@ -1,5 +1,5 @@
 // src: configs/commitlint.config.js
-// @(#) : commitlint 基本設定
+// @(#) : Commitlint configuration for @aglabo error handling library
 //
 // Copyright (c) 2025 atsushifx <http://github.com/atsushifx>
 //

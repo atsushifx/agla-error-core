@@ -1,5 +1,5 @@
 // src: shared/common/configs/vitest.config.e2e.ts
-// @(#) : vitest config for end-to-end test
+// @(#) : Vitest end-to-end test configuration for @aglabo/agla-error-core
 //
 // Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
 //
