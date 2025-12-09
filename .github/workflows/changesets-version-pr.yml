@@ -1,0 +1,45 @@
+# src: ./.github/workflows/changesets-version-pr.yml
+# @(#) : Caller workflow for all linting and scanning in .github repository
+#
+# Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
+name: "Create Version Packages PR"
+
+on:
+  push:
+    branches:
+      - "releases/*" # Releaseブランチで動かす
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+          registry-url: "https://registry.npmjs.org/"
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Create Version Packages PR
+        uses: changesets/action@v1
+        with:
+          publish: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
