@@ -1,9 +1,16 @@
-name: "Create Version Packages PR"
+# src: ./.github/workflows/changesets-version-pr.yml
+# @(#) : Caller workflow for all linting and scanning in .github repository
+#
+# Copyright (c) 2025 atsushifx <https://github.com/atsushifx>
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
 
+name: "Create Version Packages PR"
 on:
   push:
     branches:
-      - "releases/*""
+      - "releases/*"
   workflow_dispatch:
 
 permissions:
