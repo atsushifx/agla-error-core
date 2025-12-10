@@ -1,5 +1,53 @@
 # @aglabo/agla-error-core
 
+## 0.1.2
+
+### Patch Changes
+
+- [`e29b204`](https://github.com/aglabo/agla-error-core/commit/e29b20410f1ea4c534563ea1b14728484b3d0753) Thanks [@atsushifx](https://github.com/atsushifx)! - Release v0.1.1: Add documentation and CI/CD workflows
+
+  **CI/CD Workflows:**
+
+  - Add changesets-version-pr.yml for automated version PR creation
+  - Add publish-package.yml for automated package publishing
+
+  **Documentation:**
+
+  - Add LICENSE and LICENSE.ja to package
+  - Add comprehensive README.md and README.ja.md with usage examples
+
+  **Build Process:**
+
+  - Unify tsup execution via pnpm exec
+  - Add sync-configs.sh script for configuration synchronization
+  - Update base-scripts.json with new sync:configs command
+
+  **Package Metadata:**
+
+  - Update package.json with repository, homepage, and bugs information
+
+- [`e29b204`](https://github.com/aglabo/agla-error-core/commit/e29b20410f1ea4c534563ea1b14728484b3d0753) Thanks [@atsushifx](https://github.com/atsushifx)! - # Release v0.1.1: Add documentation and CI/CD workflows
+
+  **CI/CD Workflows:**
+
+  - Add changesets-version-pr.yml for automated version PR creation
+  - Add publish-package.yml for automated package publishing
+
+  **Documentation:**
+
+  - Add LICENSE and LICENSE.ja to package
+  - Add comprehensive README.md and README.ja.md with usage examples
+
+  **Build Process:**
+
+  - Unify tsup execution via pnpm exec
+  - Add sync-configs.sh script for configuration synchronization
+  - Update base-scripts.json with new sync:configs command
+
+  **Package Metadata:**
+
+  - Update package.json with repository, homepage, and bugs information
+
 ## 0.1.1
 
 ### Patch Changes
