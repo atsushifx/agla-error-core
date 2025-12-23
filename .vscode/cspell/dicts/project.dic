@@ -3,6 +3,7 @@ AGT
 esm
 jscoverage
 npmjs
+rollup
 sdd
 tsup
 vite
