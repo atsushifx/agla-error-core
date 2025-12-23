@@ -13,9 +13,6 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const __rootDir = path.resolve(__dirname, '../');
 
-// plugins
-import tsconfigPaths from 'vite-tsconfig-paths';
-
 // system config
 import { mergeConfig } from 'vitest/config';
 
@@ -24,7 +21,6 @@ import baseConfig from '../../../../base/configs/vitest.config.base.ts';
 
 // config
 export default mergeConfig(baseConfig, {
-  plugins: [tsconfigPaths()],
   test: {
     include: [
       // Functional Test - single feature complete behavior verification

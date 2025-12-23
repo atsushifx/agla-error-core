@@ -154,7 +154,7 @@ describe('Node.js Runtime: AglaError Basic Functionality', () => {
   describe('Stack trace guarantees (Node.js)', () => {
     it('✔1: stack should exist as string', () => {
       const error = new TestAglaError('StackTest', 'Test message');
-      expect(typeof error.stack === 'string' || error.stack === undefined).toBe(true);
+      expect(error.stack === undefined || typeof error.stack === 'string').toBe(true);
       // In practice, Node.js always provides stack
       expect(error.stack).toBeDefined();
     });
